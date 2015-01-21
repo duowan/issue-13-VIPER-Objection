@@ -12,7 +12,10 @@
 @implementation VTDListDataManager
 
 - (void)fetchUpcomingTodoItems:(void (^)(NSArray *))completionBlock {
-    NSDate *startDate = [NSDate date];
+    NSDate *now = [NSDate date];
+    NSInteger todaySecs = (int)[now timeIntervalSince1970] % 86400;
+    NSTimeInterval todayStandardTime = [now timeIntervalSince1970] - todaySecs;
+    NSDate *startDate = [NSDate dateWithTimeIntervalSince1970:todayStandardTime];
     NSDate *endDate = [NSDate dateWithTimeIntervalSinceNow:86400*14];
     NSPredicate *upcomingPredicate = [NSPredicate predicateWithFormat:@"(date > %@) AND (date<=%@)",
                                       startDate,
