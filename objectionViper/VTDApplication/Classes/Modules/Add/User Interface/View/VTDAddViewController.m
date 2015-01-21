@@ -10,8 +10,6 @@
 
 @interface VTDAddViewController ()<UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *eventTextField;
-
 @end
 
 @implementation VTDAddViewController

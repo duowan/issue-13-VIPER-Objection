@@ -14,5 +14,7 @@
 @interface VTDAddViewController : UIViewController
 
 @property (nonatomic, strong) VTDAddPresenter *eventHandler;
+@property (weak, nonatomic) IBOutlet UITextField *eventTextField;
+@property (weak, nonatomic) IBOutlet UIDatePicker *eventDueDatePicker;
 
 @end

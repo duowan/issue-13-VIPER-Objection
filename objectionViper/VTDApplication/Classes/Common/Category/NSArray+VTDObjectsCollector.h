@@ -1,5 +1,5 @@
 //
-//  VTDListDataManager.h
+//  NSArray+VTDObjectsCollection.h
 //  objectionViper
 //
 //  Created by 崔 明辉 on 15/1/21.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface VTDListDataManager : NSObject
+@interface NSArray (VTDObjectCollector)
 
-- (void)fetchUpcomingTodoItems:(void (^)(NSArray *items))completionBlock;
+- (void)VTD_collectArrayAsObject:(id)object completionBlock:(void (^)(NSArray *collectedArray))completionBlock;
 
 @end

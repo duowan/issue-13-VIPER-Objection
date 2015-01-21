@@ -35,6 +35,7 @@
     if (cell == nil) {
         cell = [self listTableViewCell];
     }
+    cell.eventHandler.upcomingItem = interactorObject;
     return cell;
 }
 

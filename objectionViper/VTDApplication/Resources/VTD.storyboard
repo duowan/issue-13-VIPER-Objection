@@ -167,7 +167,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="300"/>
                     <connections>
-                        <outlet property="eventTextField" destination="hsr-wS-9x8" id="hdh-vP-iqE"/>
+                        <outlet property="eventDueDatePicker" destination="9F1-Sw-Jz9" id="qa8-UU-IBz"/>
+                        <outlet property="eventTextField" destination="hsr-wS-9x8" id="nVw-mq-s4N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1e4-zv-m5G" userLabel="First Responder" sceneMemberID="firstResponder"/>

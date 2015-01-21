@@ -1,5 +1,5 @@
 //
-//  VTDListDataManager.h
+//  VTDAddDataManager.h
 //  objectionViper
 //
 //  Created by 崔 明辉 on 15/1/21.
@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VTDTodoItem.h"
 
-@interface VTDListDataManager : NSObject
+@interface VTDAddDataManager : NSObject
 
-- (void)fetchUpcomingTodoItems:(void (^)(NSArray *items))completionBlock;
+- (void)addNewEntry:(VTDTodoItem *)todoItem;
 
 @end

@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    VTDListUpcomingItemDateRelationOutOfRange,
     VTDListUpcomingItemDateRelationToday,
     VTDListUpcomingItemDateRelationTomorrow,
     VTDListUpcomingItemDateRelationLaterThisWeek,
-    VTDListUpcomingItemDateRelationNextWeek
+    VTDListUpcomingItemDateRelationNextWeek,
+    VTDListUpcomingItemDateRelationOutOfRange
 }VTDListUpcomingItemDateRelation;
 
 @interface VTDListUpcomingItem : NSObject

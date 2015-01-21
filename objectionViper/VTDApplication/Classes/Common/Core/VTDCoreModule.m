@@ -9,6 +9,8 @@
 #import "VTDCoreModule.h"
 #import "VTDWireFrame.h"
 #import "VTDCoreDataStore.h"
+#import "VTDTodoItem.h"
+#import "VTDTodoItemProvider.h"
 
 @implementation VTDCoreModule
 
@@ -19,6 +21,8 @@
     //bind class
     [self bindClass:[VTDWireFrame class] toProtocol:@protocol(VTDWireFrame)];
     [self bindClass:[VTDCoreDataStore class] toProtocol:@protocol(VTDCoreDataStore)];
+    //bind provider
+    [self bindProvider:[[VTDTodoItemProvider alloc] init] toClass:[VTDTodoItem class]];
 }
 
 @end

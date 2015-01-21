@@ -26,6 +26,9 @@
                     <constraint firstItem="G56-wV-fWB" firstAttribute="leading" secondItem="g6W-fR-SyL" secondAttribute="leading" constant="15" id="xot-gJ-Q9Y"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="eventNameLabel" destination="G56-wV-fWB" id="kQi-1g-wBv"/>
+            </connections>
             <point key="canvasLocation" x="519" y="401"/>
         </tableViewCell>
     </objects>

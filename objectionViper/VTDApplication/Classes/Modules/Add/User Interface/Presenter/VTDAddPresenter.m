@@ -10,11 +10,21 @@
 
 @implementation VTDAddPresenter
 
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        self.addInteractor = [[VTDAddInteractor alloc] init];
+    }
+    return self;
+}
+
 - (void)cancel {
     [VTD[@protocol(VTDAddWireFrame)] dismissAddInterface:self.userInterface];
 }
 
 - (void)save {
+    [self.addInteractor saveNewEntryWithName:self.userInterface.eventTextField.text
+                                     dueDate:self.userInterface.eventDueDatePicker.date];
     [VTD[@protocol(VTDAddWireFrame)] dismissAddInterface:self.userInterface];
 }
 

@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "VTDAddViewController.h"
+#import "VTDAddInteractor.h"
 
 @class VTDAddViewController;
 
 @interface VTDAddPresenter : NSObject
 
 @property (nonatomic, weak) VTDAddViewController *userInterface;
+
+@property (nonatomic, strong) VTDAddInteractor *addInteractor;
 
 - (void)cancel;
 

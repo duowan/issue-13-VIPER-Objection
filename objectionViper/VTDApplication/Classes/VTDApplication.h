@@ -14,6 +14,9 @@
 #import "VTDCoreProtocol.h"
 #import "VTDAddProtocol.h"
 
+//Categories
+#import "NSArray+VTDObjectsCollector.h"
+
 #define VTD [VTDApplication injector]
 
 @interface VTDApplication : NSObject

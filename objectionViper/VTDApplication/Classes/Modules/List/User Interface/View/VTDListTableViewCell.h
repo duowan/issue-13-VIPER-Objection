@@ -15,4 +15,6 @@
 
 @property (nonatomic, strong) VTDListTableViewCellPresenter *eventHandler;
 
+- (void)setEventNameLabelText:(NSString *)text;
+
 @end

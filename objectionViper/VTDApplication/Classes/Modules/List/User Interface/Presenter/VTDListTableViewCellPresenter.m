@@ -10,4 +10,8 @@
 
 @implementation VTDListTableViewCellPresenter
 
+- (void)setUpcomingItem:(VTDListUpcomingItem *)upcomingItem {
+    [self.userInterface setEventNameLabelText:upcomingItem.title];
+}
+
 @end

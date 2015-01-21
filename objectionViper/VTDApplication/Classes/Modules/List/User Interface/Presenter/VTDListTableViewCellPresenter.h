@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "VTDListTableViewCell.h"
+#import "VTDListUpcomingItem.h"
 
 @class VTDListTableViewCell;
 
 @interface VTDListTableViewCellPresenter : NSObject
 
 @property (nonatomic, weak) VTDListTableViewCell *userInterface;
+
+@property (nonatomic, strong) VTDListUpcomingItem *upcomingItem;
 
 @end

@@ -10,7 +10,7 @@
 
 @interface VTDListInteractor : NSObject
 
-@property (nonatomic, readonly) NSArray *listData;/** NSArray -> VTDListUpcomingItem **/
+@property (nonatomic, readonly) NSDictionary *listData;/** VTDListUpcomingItemDateRelation : NSArray **/
 
 - (void)findUpcomingItem:(void (^)())completionBlock;
 

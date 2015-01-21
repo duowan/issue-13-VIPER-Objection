@@ -8,6 +8,12 @@
 
 #import "VTDListTableViewCell.h"
 
+@interface VTDListTableViewCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *eventNameLabel;
+
+@end
+
 @implementation VTDListTableViewCell
 
 - (void)awakeFromNib {
@@ -18,6 +24,10 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setEventNameLabelText:(NSString *)text {
+    self.eventNameLabel.text = text;
 }
 
 @end
