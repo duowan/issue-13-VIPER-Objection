@@ -11,10 +11,20 @@
 
 @implementation VTDListPresenter
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:kVTDAddModuleDidAddItemNotification
+                                                  object:nil];
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
         self.listInteractor = [[VTDListInteractor alloc] init];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(updateView)
+                                                     name:kVTDAddModuleDidAddItemNotification
+                                                   object:nil];
     }
     return self;
 }

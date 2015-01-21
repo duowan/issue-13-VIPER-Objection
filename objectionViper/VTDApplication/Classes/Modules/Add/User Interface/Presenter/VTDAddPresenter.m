@@ -26,6 +26,7 @@
     [self.addInteractor saveNewEntryWithName:self.userInterface.eventTextField.text
                                      dueDate:self.userInterface.eventDueDatePicker.date];
     [VTD[@protocol(VTDAddWireFrame)] dismissAddInterface:self.userInterface];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kVTDAddModuleDidAddItemNotification object:nil];
 }
 
 @end

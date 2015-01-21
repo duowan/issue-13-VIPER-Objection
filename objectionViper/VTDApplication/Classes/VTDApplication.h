@@ -17,7 +17,9 @@
 //Categories
 #import "NSArray+VTDObjectsCollector.h"
 
+//Application Marcos
 #define VTD [VTDApplication injector]
+#define kVTDAddModuleDidAddItemNotification @"kVTDAddModuleDidAddItemNotification"
 
 @interface VTDApplication : NSObject
 
