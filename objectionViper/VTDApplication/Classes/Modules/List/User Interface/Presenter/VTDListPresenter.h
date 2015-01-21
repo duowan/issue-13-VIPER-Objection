@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "VTDListViewController.h"
+#import "VTDListInteractor.h"
 
 @class VTDListViewController;
 
 @interface VTDListPresenter : NSObject
 
 @property (nonatomic, weak) VTDListViewController *userInterface;
+
+@property (nonatomic, strong) VTDListInteractor *listInteractor;
+
+- (void)updateView;
 
 - (void)addNewEntry;
 

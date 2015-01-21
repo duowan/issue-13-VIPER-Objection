@@ -15,4 +15,10 @@
 
 @property (nonatomic, strong) VTDListPresenter *eventHandler;
 
+- (void)showNoContents;
+
+- (void)showTableView;
+
+- (void)reloadTableView;
+
 @end

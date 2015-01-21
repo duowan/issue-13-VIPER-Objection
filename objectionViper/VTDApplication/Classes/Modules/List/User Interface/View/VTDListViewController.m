@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.eventHandler updateView];
     // Do any additional setup after loading the view.
 }
 
@@ -37,6 +38,10 @@
 - (void)showTableView {
     [self.noContentView setHidden:YES];
     [self.tableView setHidden:NO];
+}
+
+- (void)reloadTableView {
+    [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource

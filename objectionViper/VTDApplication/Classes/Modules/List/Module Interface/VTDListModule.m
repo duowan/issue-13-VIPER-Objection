@@ -8,12 +8,15 @@
 
 #import "VTDListModule.h"
 #import "VTDListWireFrame.h"
+#import "VTDListUpcomingItem.h"
+#import "VTDListUpcomingItemProvider.h"
 
 @implementation VTDListModule
 
 - (void)configure {
     [self bindClass:[VTDListWireFrame class] inScope:JSObjectionScopeSingleton];
     [self bindClass:[VTDListWireFrame class] toProtocol:@protocol(VTDListWireFrame)];
+    [self bindProvider:[[VTDListUpcomingItemProvider alloc] init] toClass:[VTDListUpcomingItem class]];
 }
 
 @end
