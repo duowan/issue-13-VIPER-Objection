@@ -64,10 +64,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cLM-kM-aQ1" firstAttribute="leading" secondItem="ykz-N5-Xa7" secondAttribute="leadingMargin" constant="-16" id="1Nd-Xg-v8k"/>
-                            <constraint firstAttribute="width" secondItem="cLM-kM-aQ1" secondAttribute="width" id="20F-Tf-zHp"/>
                             <constraint firstItem="0OS-cB-AQV" firstAttribute="leading" secondItem="ykz-N5-Xa7" secondAttribute="leadingMargin" constant="-16" id="3Sf-6K-Yff"/>
                             <constraint firstItem="0OS-cB-AQV" firstAttribute="top" secondItem="8IG-9o-7hH" secondAttribute="bottom" constant="-64" id="4cl-iM-EgU"/>
+                            <constraint firstItem="cLM-kM-aQ1" firstAttribute="leading" secondItem="ykz-N5-Xa7" secondAttribute="leading" id="5Pn-fh-0Lh"/>
+                            <constraint firstAttribute="trailing" secondItem="cLM-kM-aQ1" secondAttribute="trailing" id="Pd5-fY-yv1"/>
                             <constraint firstAttribute="height" secondItem="cLM-kM-aQ1" secondAttribute="height" id="PmF-13-qoB"/>
                             <constraint firstItem="0OS-cB-AQV" firstAttribute="width" secondItem="ykz-N5-Xa7" secondAttribute="width" id="lrR-cN-Zu9"/>
                             <constraint firstItem="0OS-cB-AQV" firstAttribute="height" secondItem="ykz-N5-Xa7" secondAttribute="height" id="psi-q3-RkG"/>
